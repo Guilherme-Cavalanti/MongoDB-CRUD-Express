@@ -8,7 +8,8 @@ const TaskController = {
                 title: req.body.title,
                 priority: req.body.priority,
                 status: req.body.status,
-                dueDate: req.body.dueDate
+                dueDate: req.body.dueDate,
+                description: req.body.description
             }
             const response = await Task.create(task)
 
@@ -75,7 +76,8 @@ const TaskController = {
                 title: req.body.title,
                 priority: req.body.priority,
                 status: req.body.status,
-                dueDate: req.body.dueDate
+                dueDate: req.body.dueDate,
+                description: req.body.description
             }
 
             const updatedTask = await Task.findByIdAndUpdate(id, newTask)

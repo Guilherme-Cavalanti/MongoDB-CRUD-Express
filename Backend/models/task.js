@@ -19,6 +19,9 @@ const taskSchema = new Schema({
     dueDate: {
         type:String,
         required: true
+    },
+    description: {
+        type: String
     }
 },{timestamps: true});
 
