@@ -5,12 +5,16 @@ const InsertTask = async (task) => {
             "title": task.title,
             "priority": task.priority,
             "status": task.status,
-            "dueDate": task.dueDate
+            "dueDate": task.dueDate,
+            "description": task.description
         })
         return response
-    }catch(error){
-        console.log("Error inserting task:",error)
+    } catch (error) {
+        console.log("Error inserting task:", error)
+        return ({"fail":"Failed to connect to server",error})
     }
 }
 
-export default InsertTask
+export default {
+    InsertTask
+}
