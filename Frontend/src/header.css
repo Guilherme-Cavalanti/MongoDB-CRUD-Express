@@ -1,0 +1,20 @@
+.header {
+    border-bottom: 2px solid #dee2e6;
+    background-color: #1f2328;
+    color: #FFFFFF;
+}
+.btn-close:hover {
+    background-color: #FFFFFF !important;
+}
+
+.theme-button {
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 19.25px;
+    border: 0px;
+    padding: 5px;
+}
+
+.theme-button:hover {
+    background-color: gray;
+}
