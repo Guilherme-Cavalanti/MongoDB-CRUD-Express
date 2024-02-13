@@ -1,0 +1,16 @@
+li {
+    width: 100%;
+    padding-left: 10px;
+    margin-bottom: 20px;
+
+}
+
+li:hover {
+    background-color: #dadde1ad;  
+}
+ul {
+    padding-top: 20px;
+    padding-left: 4%;
+    text-align: start;
+    list-style: none;
+}
