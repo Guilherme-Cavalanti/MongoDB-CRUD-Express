@@ -38,14 +38,15 @@ const TaskController = {
             if (response === null) {
 
                 console.log("task not found")
-                res.status(404).json({ "message": "task not found" })
+                res.status(404).json({ "message": "Task not found" })
                 return
             }
             console.log("returned task")
-            res.status(200).json({ response, "message": `return task with id ${id}` })
+            console.log(response)
+            res.status(200).json({ response, "message": `Return task with id ${id}` })
         } catch (error) {
             console.log(error)
-            res.status(400).json({ "message": "Error getting task" })
+            res.status(400).json({ "message": "Error getting task, wrong id format" })
         }
     },
     deleteTask: async (req, res) => {
@@ -56,13 +57,13 @@ const TaskController = {
             if (response === null) {
 
                 console.log("task not found")
-                res.status(404).json({ "message": "task not found" })
+                res.status(404).json({ "message": "Task not found" })
                 return
             }
 
             const deletedTask = await Task.findByIdAndDelete(id)
             console.log("deleted task")
-            res.status(200).json({ deletedTask, "message": `deleted task with id ${id}` })
+            res.status(200).json({ deletedTask, "message": `Deleted task with id: ${id}` })
         } catch (error) {
             console.log(error)
             res.status(400).json({ "message": "Error deleting task" })
@@ -85,12 +86,12 @@ const TaskController = {
             if (updatedTask === null) {
 
                 console.log("task not found")
-                res.status(404).json({ "message": "task not found" })
+                res.status(404).json({ "message": "Task not found" })
                 return
             }
 
             console.log("updated task")
-            res.status(200).json({ updatedTask, "message": `updated task with id ${id}` })
+            res.status(200).json({ updatedTask, "message": `Updated task with id: ${id}` })
         } catch (error) {
             console.log(error)
             res.status(400).json({ "message": "Error updating task" })
