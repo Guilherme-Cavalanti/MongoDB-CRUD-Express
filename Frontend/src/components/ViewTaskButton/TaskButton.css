@@ -1,0 +1,11 @@
+.viewButton {
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 0;
+    border: 0px;
+    padding: 5px;
+}
+
+.viewButton:hover {
+    background-color: gray;
+}

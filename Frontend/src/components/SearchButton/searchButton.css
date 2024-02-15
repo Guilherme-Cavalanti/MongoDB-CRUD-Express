@@ -1,0 +1,11 @@
+.searchButton {
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 0;
+    border: 0px;
+    padding: 5px;
+}
+
+.searchButton:hover {
+    background-color: gray;
+}

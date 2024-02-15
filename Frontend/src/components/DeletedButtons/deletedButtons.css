@@ -1,0 +1,11 @@
+.deletedButton {
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 0;
+    border: 0px;
+    padding: 5px;
+}
+
+.deletedButton:hover {
+    background-color: gray;
+}

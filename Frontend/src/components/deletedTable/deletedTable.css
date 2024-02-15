@@ -1,0 +1,26 @@
+.table-responsive-sm {
+    max-height: 650px !important;
+    overflow-y: scroll !important;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.table-responsive-sm::-webkit-scrollbar {
+    width: 15px;
+}
+
+.table-responsive-sm::-webkit-scrollbar-thumb {
+    background-color: #ABABAB;
+    border-radius: 10px;
+    height: 1px;
+}
+
+.table-responsive-sm::-webkit-scrollbar-track {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+
+.table-responsive-sm::-webkit-scrollbar-thumb:hover {
+    background-color: #838383;
+    cursor: pointer;
+}
